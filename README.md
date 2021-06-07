@@ -1,7 +1,7 @@
 # JavaScript Blockchain
 
 ![Code coverage](https://img.shields.io/nycrc/thejamespower/js-blockchain?config=.nycrc&preferredThreshold=lines "Code coverage")
-
+[![ci](https://github.com/thejamespower/js-blockchain/actions/workflows/ci.yml/badge.svg)](https://github.com/thejamespower/js-blockchain/actions/workflows/ci.yml)
 ## Summary
 
 A blockchain prototype built using JavaScript, based on the Udemy course: [https://www.udemy.com/course/build-a-blockchain-in-javascript/](https://www.udemy.com/course/build-a-blockchain-in-javascript/)
