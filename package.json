@@ -4,7 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "NODE_ENV=test mocha --recursive '{,!(node_modules)/**/}*.test.js' --reporter spec --exit"
+    "api": "node ./api",
+    "api-watch": "nodemon ./api",
+    "test": "NODE_ENV=test mocha --recursive '{,!(node_modules)/**/}*.test.js' --reporter spec --exit",
+    "test-watch": "nodemon --exec 'npm run test'"
   },
   "keywords": [],
   "author": "",
@@ -12,11 +15,14 @@
   "devDependencies": {
     "chai": "^4.3.4",
     "mocha": "^8.4.0",
+    "nodemon": "^2.0.7",
     "nyc": "^15.1.0",
     "prettier": "^2.3.1",
     "sinon": "^11.1.1"
   },
   "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
     "sha.js": "^2.4.11"
   }
 }
