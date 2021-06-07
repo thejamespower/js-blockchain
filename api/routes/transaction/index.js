@@ -1,32 +1,35 @@
 const routes = require('express').Router();
 const blockchain = require('../../../lib/run');
+const { BadRequest } = require('../../middleware/errors');
 
 routes.post('/', (req, res, next) => {
-  const {
-    body: { amount, sender, recipient },
-  } = req;
+  try {
+    const {
+      body: { amount, sender, recipient },
+    } = req;
 
-  if (!amount) {
-    let error = new Error('Transaction amount required');
-    error.statusCode = 400;
-    return next(error);
+    if (!amount) {
+      throw new BadRequest('Transaction amount required');
+    }
+
+    if (!sender) {
+      throw new BadRequest('Transaction sender required');
+    }
+
+    if (!recipient) {
+      throw new BadRequest('Transaction recipient required');
+    }
+
+    res.json({
+      blockIndex: blockchain.createNewTransaction({
+        amount,
+        sender,
+        recipient,
+      }),
+    });
+  } catch (e) {
+    next(e);
   }
-
-  if (!sender) {
-    let error = new Error('Transaction sender required');
-    error.statusCode = 400;
-    return next(error);
-  }
-
-  if (!recipient) {
-    let error = new Error('Transaction recipient required');
-    error.statusCode = 400;
-    return next(error);
-  }
-
-  res.json({
-    blockIndex: blockchain.createNewTransaction({ amount, sender, recipient }),
-  });
 });
 
 module.exports = routes;
