@@ -23,6 +23,7 @@
   "dependencies": {
     "body-parser": "^1.19.0",
     "express": "^4.17.1",
-    "sha.js": "^2.4.11"
+    "sha.js": "^2.4.11",
+    "uuid": "^8.3.2"
   }
 }
