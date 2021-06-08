@@ -1,7 +1,7 @@
 # JavaScript Blockchain
 
-![Code coverage](https://img.shields.io/nycrc/thejamespower/js-blockchain?config=.nycrc&preferredThreshold=lines "Code coverage")
-[![ci](https://github.com/thejamespower/js-blockchain/actions/workflows/ci.yml/badge.svg)](https://github.com/thejamespower/js-blockchain/actions/workflows/ci.yml)
+![Code Coverage](https://img.shields.io/nycrc/thejamespower/js-blockchain?config=.nycrc&preferredThreshold=lines "Code coverage")
+[![Github Actions](https://github.com/thejamespower/js-blockchain/actions/workflows/ci.yml/badge.svg)](https://github.com/thejamespower/js-blockchain/actions/workflows/ci.yml)
 
 ## Summary
 
