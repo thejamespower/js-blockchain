@@ -6,8 +6,7 @@
   "scripts": {
     "api": "node ./api",
     "api-watch": "nodemon ./api",
-    "test": "NODE_ENV=test mocha --recursive '{,!(node_modules)/**/}*.test.js' --reporter spec --exit",
-    "coverage": "nyc report --reporter=lcov",
+    "test": "NODE_ENV=test nyc mocha --recursive '{,!(node_modules)/**/}*.test.js' --reporter spec --exit",
     "test-watch": "nodemon --exec 'npm run test'"
   },
   "keywords": [],
