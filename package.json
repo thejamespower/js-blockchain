@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "api": "node ./api",
-    "api-watch": "nodemon ./api",
-    "dev-nodes": "concurrently \"NODE_PORT=8080 NODE_URL=http://localhost:8080 nodemon ./api\" \"NODE_PORT=8081 NODE_URL=http://localhost:8081 nodemon ./api\"",
+    "api": "NODE_PORT=8080 NODE_URL=http://localhost node ./api",
+    "api-watch": "NODE_PORT=8080 NODE_URL=http://localhost nodemon ./api",
+    "dev-nodes": "concurrently \"NODE_PORT=8080 NODE_URL=http://localhost nodemon ./api\" \"NODE_PORT=8081 NODE_URL=http://localhost nodemon ./api\"",
     "test": "NODE_ENV=test nyc mocha --recursive '{,!(node_modules)/**/}*.test.js' --reporter spec --exit",
     "test-watch": "nodemon --exec 'npm run test'"
   },
@@ -25,6 +25,8 @@
   "dependencies": {
     "body-parser": "^1.19.0",
     "express": "^4.17.1",
+    "request": "^2.88.2",
+    "request-promise-native": "^1.0.9",
     "sha.js": "^2.4.11",
     "uuid": "^8.3.2"
   }

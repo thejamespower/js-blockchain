@@ -21,6 +21,7 @@ routes.post('/', (req, res, next) => {
     }
 
     res.json({
+      status: 'success',
       blockIndex: blockchain.createNewTransaction({
         amount,
         sender,
