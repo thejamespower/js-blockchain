@@ -13,10 +13,13 @@ Current API supports reading the blockchain, creating transactions and mining ne
 - Unit tests
 - Updated/replaced depcrecated dependencies
 - Project structure
+- Organised Express routes
 - ES6 classes
+- Improved run scripts
+- Error handling + Express error middleware
+- GitHub actions CI
 
 ## To Do:
 - API integration tests
-- Blockchain nodes
 - Network synchronization and consensus
 - Block explorer
