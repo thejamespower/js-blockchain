@@ -1,5 +1,5 @@
 const routes = require('express').Router();
-const { v1: uuid } = require('uuid');
+const { v1: uuid } = require('../../../lib/uuid');
 
 const blockchain = require('../../../lib/run');
 
