@@ -17,8 +17,7 @@ routes.get('/', async (req, res, next) => {
       )
     );
 
-    const currentChainLength = blockchain.chain.length;
-    let maxChainLength = currentChainLength;
+    let maxChainLength = blockchain.chain.length;
     let newLongestChain = null;
     let newPendingTransactions = null;
 
