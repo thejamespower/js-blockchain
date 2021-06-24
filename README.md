@@ -21,5 +21,5 @@ Current API supports reading the blockchain, creating transactions and mining ne
 
 ## To Do:
 - API integration tests
-- Network consensus
 - Block explorer
+- Network node application
