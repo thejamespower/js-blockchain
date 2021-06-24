@@ -11,7 +11,7 @@ Current API supports reading the blockchain, creating transactions and mining ne
 
 ## Improvements Over Course:
 - Unit tests
-- Updated/replaced depcrecated dependencies
+- Updated/replaced deprecated dependencies
 - Project structure
 - Organised Express routes
 - ES6 classes
@@ -23,3 +23,5 @@ Current API supports reading the blockchain, creating transactions and mining ne
 - API integration tests
 - Block explorer
 - Network node application
+- Dynamic difficulty
+- Refactor
